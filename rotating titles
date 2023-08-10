@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.sp-intro {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sp-intro h4, .sp-intro b, .sp-intro i, .sp-intro p, .sp-intro span {
+  line-height: 46px;
+  font-size: 38px;
+  font-weight: 400;
+  font-style: initial;
+  color: #111111;
+}
+
+.sp-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.sp-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  width: auto !important;
+}
+
+.sp-words-wrapper b.is-visible {
+  position: relative;
+}
+
+.no-js .sp-words-wrapper b {
+  opacity: 0;
+}
+
+.no-js .sp-words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+.sp-headline.slide span {
+  display: inline-block;
+  padding: 0;
+}
+
+.sp-headline.slide .sp-words-wrapper {
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.sp-headline.slide b {
+  opacity: 0;
+  top: .2em;
+}
+
+.sp-headline.slide b.is-visible {
+  top: 0;
+  opacity: 1;
+  -webkit-animation: slide-in 0.6s;
+  -moz-animation: slide-in 0.6s;
+  animation: slide-in 0.6s;
+}
+
+.sp-headline.slide b.is-hidden {
+  -webkit-animation: slide-out 0.6s;
+  -moz-animation: slide-out 0.6s;
+  animation: slide-out 0.6s;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+/* ... Rest of the keyframes and media queries ... */
+</style>
+</head>
+<body>
+<section class="sp-intro">
+  <h4 class="sp-headline slide">
+    <span>Specializing in</span>
+    <span class="sp-words-wrapper">
+      <b class="is-visible">Squarespace websites</b>
+      <b>Shopify stores</b>
+      <b>Skyward forms</b>
+      <b>much more!</b>
+    </span>
+  </h4>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+// Your JavaScript code here
+// ... Paste the jQuery code you provided ...
+</script>
+</body>
+</html>
